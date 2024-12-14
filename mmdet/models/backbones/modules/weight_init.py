@@ -5,7 +5,7 @@ import torch
 import math
 import warnings
 
-
+#：实现从截断正态分布中采样，并用采样值填充张量tensor。
 def _trunc_normal_(tensor, mean, std, a, b):
     # Cut & paste from PyTorch official master until it's in a few official releases - RW
     # Method based on https://people.sc.fsu.edu/~jburkardt/presentations/truncated_normal.pdf

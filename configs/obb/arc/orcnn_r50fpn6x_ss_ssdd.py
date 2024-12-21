@@ -4,8 +4,8 @@ _base_ = [
 ]
 
 data = dict(
-    samples_per_gpu=16,
-    workers_per_gpu=2,
+    samples_per_gpu=2,
+    workers_per_gpu=4,
 )
 
 checkpoint_config = dict(interval=1, max_keep_ckpts=1)
